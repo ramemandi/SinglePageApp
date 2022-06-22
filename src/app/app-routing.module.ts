@@ -10,10 +10,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ServicesComponent } from './services/services.component';
 
 
-
-// BodyComponent
-
-
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'footer', component: FooterComponent },
