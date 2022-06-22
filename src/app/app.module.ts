@@ -16,19 +16,15 @@ import { QuestionModule } from './onlineexams-components/question.module';
 @NgModule({
   declarations: [
     AppComponent,
-    // HeaderComponent,
     FooterComponent,
     BodyComponent,
     LoginComponent,
     ServicesComponent,
     ClientsComponent,
     ContactsComponent,
-    PageNotFoundComponent,
- 
-    //QuestionViewComponent    // QuestionComponent
-  ],
+    PageNotFoundComponent
+    ],
   imports: [
-     
     BrowserModule,
     AppRoutingModule,
     FormsModule,
