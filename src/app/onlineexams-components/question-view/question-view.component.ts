@@ -7,13 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class QuestionViewComponent implements OnInit {
 
-  @Input() item = '';
+  @Input() item :any = {};
   items: any[] = [];
   constructor() { }
 
 
   ngOnInit(): void {
-    console.log(this.item);
+    console.log(this.item, this.item.question); 
+ 
 
   }
 

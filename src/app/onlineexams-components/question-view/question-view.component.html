@@ -1,14 +1,35 @@
  
 
 
-        <div class="col-md-8"> 
-            <label>QuestionNo</label>
-            <p>Question</p>
-            <ul >
-                <li><input type="radio" />Choice 1</li>
-                <li><input type="radio" />Choice 2</li>
-                <li><input type="radio" />Choice 3</li>
-                <li><input type="radio" />Choice 4</li>
-            </ul>
+        <div style="display: flex; flex-direction: column;"> 
+            {{item | json}}
+            
+            <label>QuestionNo - {{item.questionno}}  </label>
+            <p> {{item.question}}</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    {{item.choice1}}
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    {{item.choice2}}
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    {{item.choice3}}
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    {{item.choice4}}
+                </label>
+              </div>
+           
         </div>
      
