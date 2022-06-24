@@ -1,52 +1,37 @@
 <app-header></app-header>
 
-<div class="container">
-    <div class="" style="display: flex; flex-direction: row; justify-content: space-between;">
+<div class="row">
+    <div class="col-md-8">
         <app-question-view [item]="currentItem"></app-question-view>
-
-        <div class="" style="display: flex;">
-            <table>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                </tr>
-            </table>
+        <div class="alignQuestionControl">
+            <div>
+                <button class="btn tbn-md btn-secondary" style="margin: 3px;"
+                    (click)='nextOrPrevious("previous")'>Previous</button>
+                <button class="btn tbn-md btn-primary" style="margin: 3px;" (click)='nextOrPrevious("")'>Next</button>
+            </div>
+            <div>
+                <button class="btn tbn-md btn-info" style="margin: 3px;"
+                    (click)='markAsRead(currentItem)'>Mark as Review</button>
+            </div>
         </div>
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="row">
+            <div class="col-md-6">
+                <table>
+                    <tr style="display: block;">
+
+                        <td *ngFor="let list of lists ; let i= index" [ngClass]="(i%5==0)?'break customtr':''">
+                            <button [ngClass]="(i==activeBtn)?'btn-success':'btn-light'" class="btn btn-md"
+                                value="{{i}}" (click)="getSelectedQuestion(list,$event)"> {{list+1}} </button>
+                        </td>
+                </table>
+            </div>
+        </div>
+
 
     </div>
 
-</div>
-<div>
-    <button (click)='addItem()'>Next</button>
 </div>

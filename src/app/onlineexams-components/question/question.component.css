@@ -1,0 +1,14 @@
+.customtr {
+  float: left;
+  line-height: 22px;
+}
+
+td>button {
+  width: 43px !important;
+}
+
+.alignQuestionControl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
