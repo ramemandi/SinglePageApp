@@ -115,19 +115,22 @@ export class QuestionComponent implements OnInit {
       "choice3": "Tirupathi",
       "choice4": "Vizianagaram",
     }];
-  currentItem :any = {}
+  currentItem: any = {}
   listItem = ['Random', 'Random1', 'Random2', 'Random3', 'Random4']
   lists: any = [];
-  listss = [];
   activeBtn: number = -1;
-  currentItems :any = [];
-  constructor(public QS : QuestionService) { 
+  currentItems: any = [];
+  activeTab: string = 'tab1';
+  totQuestions: any = [];
+  constructor(public QS: QuestionService) {
 
   }
 
   ngOnInit(): void {
-     this.QS.getQuestions().subscribe((result)=>{
-      this.currentItems = result;
+    this.QS.getQuestions().subscribe((result) => {
+      // this.currentItems =  result;
+      this.totQuestions = result;
+      this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'eng');;
       this.currentItem = this.currentItems[0];
     });
     this.lists = Array.from({ length: 25 }, (v, k) => (k))
@@ -138,19 +141,19 @@ export class QuestionComponent implements OnInit {
   ngOnChanges() {
 
   }
-  nextOrPrevious(param:string) {
+  nextOrPrevious(param: string) {
     // this.currentItem = this.currentItems[Math.floor(Math.random() * this.currentItems.length)]
-    if(param === 'previous'){
-      let itemIndex = this.currentItems.findIndex((item:any)=> item.questionno === this.currentItem.questionno);
-      if(itemIndex>-1){
-        this.currentItem = this.currentItems[itemIndex-1];
-        this.activeBtn = itemIndex-1;
+    if (param === 'previous') {
+      let itemIndex = this.currentItems.findIndex((item: any) => item.questionno === this.currentItem.questionno);
+      if (itemIndex > -1) {
+        this.currentItem = this.currentItems[itemIndex - 1];
+        this.activeBtn = itemIndex - 1;
       }
-    }else{
-      let itemIndex = this.currentItems.findIndex((item:any)=> item.questionno === this.currentItem.questionno);
-      if(itemIndex>-1){
-        this.currentItem = this.currentItems[itemIndex+1];
-        this.activeBtn = itemIndex+1;
+    } else {
+      let itemIndex = this.currentItems.findIndex((item: any) => item.questionno === this.currentItem.questionno);
+      if (itemIndex > -1) {
+        this.currentItem = this.currentItems[itemIndex + 1];
+        this.activeBtn = itemIndex + 1;
       }
     }
   }
@@ -162,7 +165,33 @@ export class QuestionComponent implements OnInit {
     }
   }
 
-  markAsRead(currentItem:any){
+  markAsRead(currentItem: any) {
 
+  }
+  activateTab(param: string) {
+    console.log(param, 'tst');
+
+    this.activeTab = param;
+    switch (param) {
+      case 'tab1':
+        this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'eng');
+        this.currentItem = this.currentItems[0];
+        break;
+      case 'tab2':
+        this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'gk');
+        this.currentItem = this.currentItems[0];
+        break;
+      case 'tab3':
+        this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'reasoning');
+        this.currentItem = this.currentItems[0];
+        break;
+      case 'tab4':
+        this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'mat');
+        this.currentItem = this.currentItems[0];
+        break;
+      default: this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'eng');
+        this.currentItem = this.currentItems[0];
+        break;
+    }
   }
 }

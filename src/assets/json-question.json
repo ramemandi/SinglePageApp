@@ -5,103 +5,490 @@
       "choice1": "Vizag",
       "choice2": "Vijayanagaram",
       "choice3": "Tirupathi",
-      "choice4": "Vijayawada"
+      "choice4": "Vijayawada",
+      "type":"gk"
     }, {
       "questionno": 2,
       "question": "Who is cheif minister of Andhra Pradesh",
       "choice1": "Pawan Kalyan",
       "choice2": "Chandra Babu",
       "choice3": "YS Jagan",
-      "choice4": "Sanjay"
+      "choice4": "Sanjay",
+      "type":"gk"
     }, {
       "questionno": 3,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 4,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 5,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 6,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 7,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 8,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 9,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 10,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 11,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 12,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 13,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 14,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
+      "choice4": "Vizianagaram",
+       "type":"gk"
     }, {
       "questionno": 15,
       "question": "Which city is called as city of destiny in ap",
       "choice1": "Visakhapatnam",
       "choice2": "Nellore",
       "choice3": "Tirupathi",
-      "choice4": "Vizianagaram"
-    }]
+      "choice4": "Vizianagaram",
+       "type":"gk"
+    },
+  
+    {
+      "questionno": 16,
+      "question": "How many alphabets are there in english",
+      "choice1": "25",
+      "choice2": "23",
+      "choice3": "24",
+      "choice4": "26",
+      "type":"eng"
+    }, {
+      "questionno": 17,
+      "question": "Which are called as vowels",
+      "choice1": "abcedf",
+      "choice2": "zxvbc",
+      "choice3": "aeiou",
+      "choice4": "reree",
+      "type":"eng"
+    }, {
+      "questionno":18,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 19,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 20,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 21,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 22,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 23,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 24,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 25,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 26,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 27,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 28,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    }, {
+      "questionno": 29,
+      "question": "Yesterday, they ___ mongos.",
+      "choice1": "eaten",
+      "choice2": "eat",
+      "choice3": "ate",
+      "choice4": "none",
+       "type":"eng"
+    }, {
+      "questionno": 30,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"eng"
+    },
+  
+  
+    {
+      "questionno": 31,
+      "question": "Father's father is called as___",
+      "choice1": "grand mother",
+      "choice2": "grand father",
+      "choice3": "father",
+      "choice4": "father's brother",
+      "type":"reasoning"
+    }, {
+      "questionno": 32,
+      "question": "ABC,CDE,---,IJK,LMN?",
+      "choice1": "FGI",
+      "choice2": "GIJ",
+      "choice3": "EFG",
+      "choice4": "IJK",
+      "type":"reasoning"
+    }, {
+      "questionno":33,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 34,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 35,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 36,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 37,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 38,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 39,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 40,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 41,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 42,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 43,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"reasoning"
+    }, {
+      "questionno": 44,
+      "question": "Yesterday, they ___ mongos.",
+      "choice1": "eaten",
+      "choice2": "eat",
+      "choice3": "ate",
+      "choice4": "none",
+       "type":"reasoning"
+    }, {
+      "questionno": 45,
+      "question": "123 Called as ABC, then zyx called as ____? ",
+      "choice1": "262523",
+      "choice2": "262521",
+      "choice3": "262522",
+      "choice4": "262524",
+       "type":"reasoning"
+    },
+
+
+
+
+    {
+      "questionno": 46,
+      "question": "12,23,34,45,__?",
+      "choice1": "67",
+      "choice2": "78",
+      "choice3": "56",
+      "choice4": "99",
+      "type":"mat"
+    }, {
+      "questionno": 47,
+      "question": "2,4,6,8,_,12,14",
+      "choice1": "10",
+      "choice2": "14",
+      "choice3": "18",
+      "choice4": "20",
+      "type":"mat"
+    }, {
+      "questionno":48,
+      "question": "1,4,9,16,25,_?",
+      "choice1": "35",
+      "choice2": "36",
+      "choice3": "37",
+      "choice4": "38",
+       "type":"mat"
+    }, {
+      "questionno": 49,
+      "question": "1,8,27,_,125",
+      "choice1": "84",
+      "choice2": "74",
+      "choice3": "54",
+      "choice4": "64",
+       "type":"mat"
+    }, {
+      "questionno": 50,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"mat"
+    }, {
+      "questionno": 51,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"mat"
+    }, {
+      "questionno": 52,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"mat"
+    }, {
+      "questionno": 53,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"mat"
+    }, {
+      "questionno": 54,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"mat"
+    },  {
+      "questionno": 55,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"mat"
+    }, {
+      "questionno": 56,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"mat"
+    }, {
+      "questionno": 57,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"mat"
+    }, {
+      "questionno": 58,
+      "question": "Yesterday, they ___ mongos.",
+      "choice1": "eaten",
+      "choice2": "eat",
+      "choice3": "ate",
+      "choice4": "none",
+       "type":"mat"
+    }, 
+    {
+      "questionno": 59,
+      "question": "Which city is called as city of destiny in ap",
+      "choice1": "Visakhapatnam",
+      "choice2": "Nellore",
+      "choice3": "Tirupathi",
+      "choice4": "Vizianagaram",
+       "type":"mat"
+    },{
+      "questionno": 60,
+      "question": "(a+b)^2 = ",
+      "choice1": "a^2-b^2-2ab",
+      "choice2": "a^2+b^2-2ab",
+      "choice3": "a^2-b^2+2ab",
+      "choice4": "a^2+b^2+2ab",
+       "type":"mat"
+    }
+  ]

@@ -2,8 +2,39 @@
 
 <div class="row">
     <div class="col-md-8">
-        <app-question-view [item]="currentItem"></app-question-view>
         <div class="alignQuestionControl">
+            <ul class="nav nav-pills">
+                <li class="nav-item" (click)="activateTab('tab1')">
+                  <a class="nav-link" [ngClass]="(activeTab == 'tab1')?'active':''"  >English</a>
+                </li>
+                <li class="nav-item" (click)="activateTab('tab2')">
+                  <a class="nav-link" [ngClass]="(activeTab == 'tab2')?'active':''"   >General Awerness</a>
+                </li>
+                <li class="nav-item" (click)="activateTab('tab3')">
+                  <a class="nav-link" [ngClass]="(activeTab == 'tab3')?'active':''"  >Reasoning</a>
+                </li>
+                <li class="nav-item" (click)="activateTab('tab4')">
+                  <a class="nav-link" [ngClass]="(activeTab == 'tab4')?'active':''"  tabindex="-1" aria-disabled="true">Maths</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade " [ngClass]="(activeTab == 'tab1')?'show active':''" id="tab1" role="tabpanel" aria-labelledby="pills-home-tab">English Section
+                     <app-question-view [item]="currentItem"></app-question-view>
+
+                </div>
+                <div class="tab-pane fade" id="tab2" [ngClass]="(activeTab == 'tab2')?'show active':''" role="tabpanel" aria-labelledby="pills-profile-tab">General Awerness Section
+                    <app-question-view [item]="currentItem"></app-question-view>
+
+                </div>
+                <div class="tab-pane fade" id="tab3" [ngClass]="(activeTab == 'tab3')?'show active':''" role="tabpanel" aria-labelledby="pills-contact-tab">Reasoning Section
+                    <app-question-view [item]="currentItem"></app-question-view>
+
+                </div>
+                <div class="tab-pane fade" id="tab4" [ngClass]="(activeTab == 'tab4')?'show active':''" role="tabpanel" aria-labelledby="pills-contact-tab">Maths Section
+                    <app-question-view [item]="currentItem"></app-question-view>
+
+                </div>
+              </div>
             <div>
                 <button class="btn tbn-md btn-secondary" style="margin: 3px;"
                     (click)='nextOrPrevious("previous")'>Previous</button>
