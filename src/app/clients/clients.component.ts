@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CiscoroomsService } from './ciscorooms.service';
+ 
 @Component({
   selector: 'app-clients',
   templateUrl: './clients.component.html',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public cr:CiscoroomsService) { }
 
   ngOnInit(): void {
+     
   }
 
 }
