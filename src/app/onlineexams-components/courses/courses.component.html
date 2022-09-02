@@ -65,33 +65,87 @@
     <div *ngIf="!tableToggle" class="mat-elevation-z8">
 
       <!-- <form name="courseForm" #courseForm="ngForm" novalidate role="form" (ngSubmit)="courseForm.form.valid && saveCourse()"> -->
-  <form name="loginForm" #loginForm='ngForm' novalidate role="form" (ngSubmit)="loginForm.form.valid && saveCourse()">
-      
-        <div class="row">
-          <div class="col-5">
-            <mat-form-field appearance="fill">
-              <mat-label>Course Name</mat-label>
-              <input   name="courseName" #courseName="ngModel"  matInput>
-              <mat-hint *ngIf="firstNameAutofilled">Autofilled!</mat-hint>
-            </mat-form-field>
-          </div>
-          <div class="col-5">
-            <!-- <mat-form-field appearance="standard">
-              <mat-label>Duration</mat-label>
-              <input matInput (keyup)="applyFilter($event)" name="duration" #duration="ngModel" placeholder="Ex. Mia" >
-              <!-- <input type="password" name="password" minlength="4" name="password" required value="" placeholder="Password"
-              #password="ngModel" [(ngModel)]="loginData.password">         
-            </mat-form-field> -->
-          </div>
-          <div class="col-2" id="subbtn">
-            <button mat-raised-button>Submit</button>
+      <div class="container-fluid" style="padding-top: 10px;">
+        <form name="loginForm" #loginForm='ngForm' novalidate role="form"
+          (ngSubmit)="loginForm.form.valid && saveCourse()">
+
+          <div class="row">
+            <div class="col-4">
+              <mat-form-field appearance="fill">
+                <mat-label>Course Name</mat-label>
+                <!-- <input   name="courseName" #courseName="ngModel"    /> -->
+                <input type="text" name="courseName" minlength="4" name="courseName" required value=""
+                  placeholder="Course Name" ngModel #courseName="ngModel" matInput (change)="detectChange(courseName)">
+                <mat-hint *ngIf="firstNameAutofilled"> </mat-hint>
+              </mat-form-field>
+              <!-- <div [hidden]="!courseName.valid || courseName.pristine" class="alert alert-danger">
+              <span>This field is required.</span>
+              </div> -->
+              <div *ngIf="courseName.touched && !courseName.valid" class="alert alert-danger"> This field is required
+                <div *ngIf="courseName.errors && courseName.errors.required">
+                  <mat-hint>Minimum {{courseName.errors.minlength.requiredLength}} characters required.</mat-hint>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-4">
+              <mat-form-field appearance="fill">
+                <mat-label>Duration</mat-label>
+                <!-- <input   name="courseName" #courseName="ngModel"    /> -->
+                <input type="text" name="duration" minlength="4" name="duration" required value=""
+                  placeholder="Duration" #duration matInput>
+                <mat-hint *ngIf="firstNameAutofilled">Autofilled!</mat-hint>
+              </mat-form-field>
+              <button mat-icon-button class="example-icon add-icon" aria-label="Example icon-button with add icon">
+                <mat-icon>add</mat-icon>
+              </button>
+            </div>
+            <div class="col-2"> 
+              <button mat-icon-button class="example-icon add-icon" aria-label="Example icon-button with add icon">
+              <mat-icon>add_circle_outline</mat-icon></button>
+              <button mat-icon-button class="example-icon minus-icon" aria-label="Example icon-button with minus icon">
+                <mat-icon>remove_circle_outline</mat-icon>  
+              </button>
+            
+            </div>
+            <div class="col-2" id="subbtn">
+              <button mat-raised-button>Submit</button>
+            </div>
+
+
           </div>
 
 
+        </form>
+      </div>
+      <!-- <form name="loginForm" #loginForm='ngForm' novalidate role="form" (ngSubmit)="loginForm.form.valid && login()">
+        <div>
+          <input type="text" name="login" value="" placeholder="Username or Email" #username="ngModel" name="username"
+            [(ngModel)]="loginData.username" required>
+          <div [hidden]="!username.valid && username.touched" class="alert alert-danger"> This is required </div>
         </div>
-
-
-      </form>
+    
+        <div>
+          <input type="password" name="password" minlength="4" name="password" required value="" placeholder="Password"
+            #password="ngModel" [(ngModel)]="loginData.password">
+           <div [hidden]="password.valid || password.pristine" class="alert alert-danger"> This is required </div>
+        </div>
+ 
+    
+        <div class="remember_me">
+          <label>
+            <input type="checkbox" name="remember_me" id="remember_me" #checked="ngModel" [(ngModel)]="loginData.checked"
+              required>
+            Remember me on this computer
+          </label>
+        </div>
+        <div style="display: flex;
+        justify-content: flex-end;
+        padding-top: 10px;">
+          <button class="submit" type="submit" name="commit" value="Login" [disabled]="!loginForm.form.valid"> Login
+          </button>
+        </div>
+      </form> -->
 
     </div>
   </mat-card>

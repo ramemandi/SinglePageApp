@@ -64,6 +64,7 @@ export class CoursesComponent implements AfterViewInit {
   lastNameAutofilled: boolean = false;
   courseName : any;
 
+  loginData = { username: '', password: '', checked: false }
 
   @ViewChild(MatPaginator) 'paginator': MatPaginator;
   @ViewChild(MatSort) 'sort': MatSort;
@@ -97,7 +98,13 @@ export class CoursesComponent implements AfterViewInit {
   saveCourse(){
 
   }
-
+  login() {
+    console.log(this.loginData);   
+  }
+  detectChange(event:any){
+    console.log(event,'eve');
+    
+  }
 
 }
 

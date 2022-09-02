@@ -1,25 +1,16 @@
 import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { CiscoroomsService } from './ciscorooms.service';
  
-=======
 
 import { QuestionService } from '../onlineexams-components/question/question.service';
 
->>>>>>> e1da761106cadf64aaf46846674599d32c589feb
 @Component({
   selector: 'app-clients',
   templateUrl: './clients.component.html',
   styleUrls: ['./clients.component.css']
 })
 export class ClientsComponent implements OnInit {
-<<<<<<< HEAD
-
-  constructor(public cr:CiscoroomsService) { }
-
-  ngOnInit(): void {
-=======
   selectedRoomData: any;
   ciscoRooms: any;
   rooms: Array<any> = [];
@@ -57,7 +48,6 @@ export class ClientsComponent implements OnInit {
     this.selectedRoomData = this.ciscoRooms.filter((ele: any) =>
       ele.msgData[0].roomId === roomId).map((res:{msgData:{files:any,personEmail:string,personId:string,text:string}[]})=>({"files": res.msgData[0].files,"personEmail":res.msgData[0].personEmail,"personId":res.msgData[0].personId,"text":res.msgData[0].text}));
     console.log(this.selectedRoomData, 'this.selecteRoomData');
->>>>>>> e1da761106cadf64aaf46846674599d32c589feb
      
   }
 
