@@ -1,4 +1,3 @@
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { Router } from '@angular/router';
@@ -13,7 +12,7 @@ import { loginModal } from './login.modal';
 export class LoginComponent implements OnInit {
   loginData = { username: '', password: '', checked: false }
   loginModal = new loginModal('KALYAN0055', '');
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
 
@@ -24,7 +23,7 @@ export class LoginComponent implements OnInit {
     this.loginModal = this.loginData;
     console.log(this.loginModal);
 
-    if(this.loginModal.password && this.loginModal.password){
+    if (this.loginModal.password && this.loginModal.password) {
       this.router.navigate(['/dashboard'])
     }
   }
