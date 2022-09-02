@@ -118,7 +118,7 @@ export class QuestionComponent implements OnInit {
   currentItem: any = {}
   listItem = ['Random', 'Random1', 'Random2', 'Random3', 'Random4']
   lists: any = [];
-  activeBtn: number = -1;
+  activeBtn: number = 0;
   currentItems: any = [];
   activeTab: string = 'tab1';
   totQuestions: any = [];
@@ -130,11 +130,22 @@ export class QuestionComponent implements OnInit {
     this.QS.getQuestions().subscribe((result) => {
       // this.currentItems =  result;
       this.totQuestions = result;
-      this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'eng');;
+      this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'eng');
+      console.log(this.currentItems.length,'this.currentItems.length');
+      
+      if(this.currentItems.length === 15){
+        this.currentItems.forEach((cI:any,index:any) => {
+         if (this.currentItems.length <=25) {
+           this.currentItems.push({...cI,...{"questionno": +(cI.questionno)+15}})
+         }
+         
+        });   
+      }
       this.currentItem = this.currentItems[0];
     });
-    this.lists = Array.from({ length: 25 }, (v, k) => (k))
-    console.log(this.lists, 'dddd');
+     
+    this.lists = Array.from({ length: 25 }, (v, k) => (k));
+    console.log(this.currentItems, 'dddd');
 
   }
 
@@ -172,25 +183,35 @@ export class QuestionComponent implements OnInit {
     console.log(param, 'tst');
 
     this.activeTab = param;
+    this.activeBtn = 0;
+    this.lists = [];
+
     switch (param) {
       case 'tab1':
+        this.lists = Array.from({ length: 25 }, (v, k) => (k));
         this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'eng');
         this.currentItem = this.currentItems[0];
         break;
       case 'tab2':
+  
+        this.lists = Array.from({ length: 25 }, (v, k) => (k+25));
         this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'gk');
         this.currentItem = this.currentItems[0];
         break;
       case 'tab3':
+        this.lists = Array.from({ length: 25 }, (v, k) => (k+50));
         this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'reasoning');
         this.currentItem = this.currentItems[0];
         break;
       case 'tab4':
+        this.lists = Array.from({ length: 25 }, (v, k) => (k+75));
         this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'mat');
         this.currentItem = this.currentItems[0];
         break;
       default: this.currentItems = this.totQuestions.filter((item: { type: string; }) => item.type === 'eng');
         this.currentItem = this.currentItems[0];
+        this.lists = Array.from({ length: 25 }, (v, k) => (k));
+
         break;
     }
   }
