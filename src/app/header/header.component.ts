@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router,RouterLink, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  title = 'SinglePageApp';
+  subMenu : boolean =false;
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
-
+  showDropMenu(e:any) {
+    this.subMenu = !this.subMenu;
+  }
+  pageNavition(routeName:String='',id:number=0){
+    this.router.navigate([routeName])
+  }
 }

@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
+// import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { LoginComponent } from './login/login.component';
 import { ServicesComponent } from './services/services.component';
@@ -13,11 +13,13 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SharedModule } from './shared.module';
 import { QuestionModule } from './onlineexams-components/question.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialExampleModule } from './material.module';
  
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
+  
     BodyComponent,
     LoginComponent,
     ServicesComponent,
@@ -32,7 +34,9 @@ import { QuestionModule } from './onlineexams-components/question.module';
     ReactiveFormsModule,
     SharedModule,
     QuestionModule,
-    HttpClientModule 
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialExampleModule
   ],
   exports:[
      

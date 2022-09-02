@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'clients', component: ClientsComponent, pathMatch: 'full' },
   { path: 'contact/:id', component: ContactsComponent, pathMatch: 'full' },
   { path: 'question', loadChildren: './onlineexams-components/question.module#QuestionModule' },
+  { path: 'onlineexams', loadChildren: './onlineexams-components/question.module#QuestionModule' },
   { path: '**', component: PageNotFoundComponent }
 ];
 

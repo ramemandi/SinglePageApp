@@ -2,9 +2,10 @@
   <h1>Login to Web App {{diagnostic}} </h1>
 
   <form name="loginForm" #loginForm='ngForm' novalidate role="form" (ngSubmit)="loginForm.form.valid && login()">
-    <div><input type="text" name="login" value="" placeholder="Username or Email" #username="ngModel" name="username"
+    <div>
+      <input type="text" name="login" value="" placeholder="Username or Email" #username="ngModel" name="username"
         [(ngModel)]="loginData.username" required>
-      <div [hidden]="password.valid || password.pristine" class="alert alert-danger"> This is required </div>
+      <div [hidden]="!username.valid && username.touched" class="alert alert-danger"> This is required </div>
     </div>
 
     <div>

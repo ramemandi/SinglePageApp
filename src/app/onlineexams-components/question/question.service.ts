@@ -23,6 +23,11 @@ export class QuestionService {
     // return questions;
       
   }
+
+  getCiscoRoomsData(){
+    return this.httpClient.get('../../../assets/ciscorooms.json').pipe();
+
+  }
   //  getQuestions():any{
   //   let questions =  fetch('../../../assets/json-question.json')
   //   return questions;
